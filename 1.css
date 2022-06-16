@@ -1,0 +1,136 @@
+@import url(normalize.css);
+body{
+    /* 设置body为flex布局 */
+    display: flex;
+    /* 将子元素排列方式设置为横向排列
+    请值方式还有：
+    column：纵向排列
+    rom:横向排列
+    column-reverse:纵向反向排列
+    row-reverse:横向反向排列
+     */
+    flex-direction: row;
+    /* 将子元素在主轴的排列方式设置为center 
+    取值还有：
+    flex-start:主轴开始方向
+    flex-end:主轴结束方向
+    space-between: 元素两侧排列，元素间隔平均分布
+    space-arround:  元素两侧排列，元素间隔平均分布(外侧元素与父容器的间隔为子元素间隔的一半)
+    
+    */
+    
+    justify-content: center;
+    /* 将子元素在交叉轴的排列方式设置为center
+      flex-start:交叉轴开始方向
+    flex-end:交叉轴结束方向*/ 
+    align-items: center;
+
+}
+.container{
+    width: 400px;
+    height:340px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.show{
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image: url(5.png);
+}
+.img{
+    width: 70px;
+    height: 70px;
+}
+.a{
+    padding-top: -4px;
+}
+.tu{
+    width: 120px;
+    height: 25px;
+   
+}
+.tu1{
+    width: 200px;
+    height: 60px;
+    padding-left: 75px;
+
+}
+
+.user{
+
+    background-image: url(92ef3042002b267e641d21476e3b4c92_512_512.jpg!con);
+    background-size: 32px 34px;
+    
+    background-position: 5px 8px;
+    
+    background-repeat: no-repeat;
+    padding: 2px 8px 5px 55px;
+    border:1px solid #ddd;
+   
+    width: 225px;
+    
+    }
+ 
+/* .show input{ 
+    width: 100%;
+    height: 180px;
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    text-align: right;
+
+/* }  */
+input:focus{
+    outline: none;
+}  
+input{
+    background-color: #fff;
+    margin-left: 22px;
+   margin-top: 15px;
+   height: 40px;
+   width: 250px;
+}
+.e{
+  margin-top: 5px;
+    margin-left: 140px;
+}
+.w{
+    margin-top: -30px;
+    margin-left: 300px;
+    font-size: 20px;
+    color: aliceblue;
+}
+button{
+    width: 80px;
+    height: 51.5px;
+margin-left: -5px;
+background-color: #dde5ed;
+color: #5e5e5e;
+position: relative;
+border: none;
+}
+.btns{
+    height: 270px;
+    width: 100%;
+    box-sizing: border-box;
+  
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-start;
+
+}
+.b{
+    padding-left: 20px;
+}
+.btn{
+    width: 70px; 
+    height: 70px;
+
+    background-color: aquamarine;
+}
